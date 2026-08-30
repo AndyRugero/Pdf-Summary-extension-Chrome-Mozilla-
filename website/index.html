@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GimmeSummary - Smart PDF Summarizer Chrome Extension</title>
+    <meta name="description"
+        content="Summarize and chat with any PDF document locally in your browser. Fully private, custom AI settings, and 100% free.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand">
+                <img src="assets/logo.png" alt="GimmeSummary Logo" class="logo">
+                <span>GimmeSummary</span>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#faq">FAQ</a>
+                <a href="mailto:andruge70@gmail.com">Contact Us</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Switcher -->
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <span class="theme-icon">
+                        <!-- Moon SVG Icon -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" style="vertical-align: middle;">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </span>
+                </button>
+
+                <a href="https://chromewebstore.google.com/detail/gimmesummary-pdf-summarizer/bpippolfbngjfidnhkchfakhjmahcipb" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cta">Add to Chrome</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="promo-badge">
+                        <!-- Lightning SVG Icon -->
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12" style="display: inline-block; vertical-align: middle; margin-right: 4px; margin-top: -2px;">
+                            <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                        100% Free & Locally Private
+                    </div>
+                    <h1 class="hero-title">Summarize & Chat with Any PDF Instantly</h1>
+                    <p class="hero-desc">
+                        Supercharge your reading speed. Extract core takeaways, query charts, and model procedure workflows from PDF documents securely inside your browser.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="https://chromewebstore.google.com/detail/gimmesummary-pdf-summarizer/bpippolfbngjfidnhkchfakhjmahcipb" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Add to Chrome</a>
+                        <a href="#features" class="btn btn-secondary btn-lg">Learn Features</a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="trust-stars">★★★★★</div>
+                        <div class="trust-text">Designed for students, researchers, developers, and professionals worldwide.</div>
+                    </div>
+                </div>
+
+                <div class="hero-mockup-wrapper" style="position: relative; max-width: 440px; margin: 0 auto;">
+                    <div style="position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px; background: radial-gradient(circle, var(--accent-blue) 0%, transparent 70%); opacity: 0.15; filter: blur(40px); z-index: -1;"></div>
+                    <!-- Logo centered placeholder for preview -->
+                    <div style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 24px; padding: 40px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
+                        <img src="assets/logo.png" alt="Logo Large" style="width: 140px; height: auto; margin-bottom: 24px; animation: pulse 4s infinite ease-in-out;">
+                        <h3 style="font-family: var(--font-heading); font-size: 22px; font-weight: 800; margin-bottom: 8px;">GimmeSummary</h3>
+                        <p style="font-size: 13px; color: var(--text-secondary);">Your private AI PDF Assistant</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Advanced Document Intelligence</h2>
+                    <p>Read faster and understand complex text instantly with modern AI summarizers built directly into Chrome.</p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature Card 1 -->
+                    <div class="feature-card f-blue">
+                        <div class="f-icon">
+                            <!-- Document SVG Icon -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="36" height="36" style="color: var(--accent-blue);">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="16" y1="13" x2="8" y2="13" />
+                                <line x1="16" y1="17" x2="8" y2="17" />
+                                <line x1="10" y1="9" x2="8" y2="9" />
+                            </svg>
+                        </div>
+                        <h3>Dynamic Summaries</h3>
+                        <p>
+                            Generate structured summaries tailored to your needs. Formats include bulleted takeaways, TL;DR notes, executive summaries, child-friendly explanations, or custom ranges.
+                        </p>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="feature-card f-teal">
+                        <div class="f-icon">
+                            <!-- Chat Bubble SVG Icon -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="36" height="36" style="color: var(--accent-teal);">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                            </svg>
+                        </div>
+                        <h3>Interactive Workspace</h3>
+                        <p>
+                            Ask questions, extract data points, and clarify terms using our semantic chat interface. The AI searches the document text locally to give highly contextual answers.
+                        </p>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="feature-card f-green">
+                        <div class="f-icon">
+                            <!-- Chart SVG Icon -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="36" height="36" style="color: var(--accent-green);">
+                                <line x1="18" y1="20" x2="18" y2="10" />
+                                <line x1="12" y1="20" x2="12" y2="4" />
+                                <line x1="6" y1="20" x2="6" y2="14" />
+                            </svg>
+                        </div>
+                        <h3>Visual Workflow Modeling</h3>
+                        <p>
+                            Convert document procedures, cycles, timelines, and systems into visual flowcharts using Mermaid.js syntax inside the reader.
+                        </p>
+                    </div>
+
+                    <!-- Feature Card 4 -->
+                    <div class="feature-card f-yellow">
+                        <div class="f-icon">
+                            <!-- Laptop SVG Icon -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="36" height="36" style="color: var(--accent-yellow);">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" />
+                                <line x1="12" y1="17" x2="12" y2="21" />
+                            </svg>
+                        </div>
+                        <h3>Doxygen Header Generator</h3>
+                        <p>
+                            Document code structures instantly. Extracts classes, methods, and functions from text and writes standard Doxygen-annotated declarations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Free Highlight Card -->
+        <section class="free-banner-section">
+            <div class="container">
+                <div class="free-card">
+                    <div class="free-content">
+                        <div class="free-badge">Open Ecosystem</div>
+                        <h2>No Subscriptions. No Limits.</h2>
+                        <p>
+                            Unlike other services that lock document limits behind expensive paywalls, GimmeSummary is 100% free to use. By connecting your own developer API credentials, you run summaries directly and securely at standard API rates, completely eliminating markups.
+                        </p>
+                        <a href="https://chromewebstore.google.com/detail/gimmesummary-pdf-summarizer/bpippolfbngjfidnhkchfakhjmahcipb" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Add to Chrome</a>
+                    </div>
+                    <div>
+                        <ul class="free-checklist">
+                            <li><span class="check">✓</span> <span>No payment details required</span></li>
+                            <li><span class="check">✓</span> <span>Save unlimited documents locally</span></li>
+                            <li><span class="check">✓</span> <span>Secure Cloudflare proxy protection</span></li>
+                            <li><span class="check">✓</span> <span>Complete control over AI variables</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it Works Section -->
+        <section id="how-it-works" class="workflow-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Simple 4-Step Process</h2>
+                    <p>Get up and running with document intelligence in under a minute.</p>
+                </div>
+                
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Install Extension</h3>
+                        <p>Download GimmeSummary from the Chrome Web Store with one click.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Connect Credentials</h3>
+                        <p>Input your OpenAI API key directly or route securely via your Cloudflare worker.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">3</div>
+                        <h3>Upload Document</h3>
+                        <p>Drag and drop a PDF on the dashboard or right-click any online PDF link.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">4</div>
+                        <h3>Read & Summarize</h3>
+                        <p>Instantly retrieve summaries, model diagrams, or chat with the document.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Clear explanations of how GimmeSummary handles keys, documents, and privacy.</p>
+                </div>
+
+                <div class="faq-grid">
+                    <div class="faq-accordion">
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Is GimmeSummary completely free?</span>
+                                <span class="arrow">↓</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    Yes! The extension itself has zero charges, token limitations, or plans. You simply enter your own OpenAI API key to process document summaries directly at standard developer costs.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>How is my API key stored and secured?</span>
+                                <span class="arrow">↓</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    Your key is either stored locally inside your browser's encrypted storage, or saved securely on your own private Cloudflare Worker proxy. It is never transmitted to our servers.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Are my uploaded PDF files private?</span>
+                                <span class="arrow">↓</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    100% private. All text extraction is performed locally on your device. The document text is only sent securely via HTTPS to OpenAI to generate summaries, and it is never saved or retained.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Does OpenAI use my files to train models?</span>
+                                <span class="arrow">↓</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    No. As per OpenAI's official terms of service, data sent through their API is strictly excluded from model training databases.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 32px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+                        <!-- Lightbulb SVG Icon -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" style="color: var(--accent-yellow); margin: 0 auto 16px auto; display: block;">
+                            <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A5 5 0 0 0 8 8c0 1.3.5 2.6 1.5 3.5.7.8 1.3 1.5 1.5 2.5" />
+                            <line x1="9" y1="18" x2="15" y2="18" />
+                            <line x1="10" y1="22" x2="14" y2="22" />
+                        </svg>
+                        <h4 style="font-family: var(--font-heading); font-size: 18px; font-weight: 700; margin-bottom: 8px;">Still Have Questions?</h4>
+                        <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 20px;">Contact us anytime and we will be happy to assist you.</p>
+                        <a href="mailto:andruge70@gmail.com" class="btn btn-secondary" style="padding: 10px 20px; font-size: 13px;">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <a href="#" class="brand">
+                    <img src="assets/logo.png" alt="logo" class="logo">
+                    <span>GimmeSummary</span>
+                </a>
+                <p class="copyright">© 2026 GimmeSummary. All rights reserved.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="mailto:andruge70@gmail.com">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive script -->
+    <script>
+        // Theme toggler
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = themeToggle.querySelector('.theme-icon');
+        const html = document.documentElement;
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            if (currentTheme === 'dark') {
+                html.setAttribute('data-theme', 'light');
+                themeIcon.innerHTML = `
+                    <!-- Sun SVG -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" style="vertical-align: middle;">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                `;
+            } else {
+                html.setAttribute('data-theme', 'dark');
+                themeIcon.innerHTML = `
+                    <!-- Moon SVG -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" style="vertical-align: middle;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                `;
+            }
+        });
+
+        // FAQ accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const button = item.querySelector('.faq-question');
+            button.addEventListener('click', () => {
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
+                
+                // Close other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                    }
+                });
+
+                // Toggle current item
+                item.classList.toggle('active');
+                button.setAttribute('aria-expanded', !isExpanded);
+            });
+        });
+    </script>
+</body>
+
+</html>

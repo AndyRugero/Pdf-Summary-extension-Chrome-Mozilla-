@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/dashboard.tsx","./src/main.tsx","./src/logic/background.ts","./src/logic/geminiservice.ts","./src/logic/pdfparser.ts"],"version":"6.0.3"}

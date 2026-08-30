@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-main: 'Manrope', sans-serif;
+    --color-primary: #2563eb;
+    --color-primary-light: #dbeafe;
+    --color-primary-dark: #1e40af;
+    --color-surface: #ffffff;
+    --color-surface-low: #f9fafb;
+    --color-surface-container: #f3f4f6;
+    --color-surface-high: #e5e7eb;
+    --color-on-surface: #111827;
+    --color-on-surface-variant: #4b5563;
+    --color-outline: #d1d5db;
+    --color-outline-variant: #e5e7eb;
+    --color-bg: #f9fafb;
+    --color-error: #ef4444;
+    --color-error-container: #fee2e2;
+    --color-success: #10b981;
+    --color-success-container: #d1fae5;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    color: var(--color-on-surface);
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom scrollbar for light mode */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
+
+/* Select styling */
+select {
+    appearance: auto;
+}

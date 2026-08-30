@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - GimmeSummary - PDF Summarizer</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9fafb;
+        }
+        .container {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+        }
+        h1 {
+            color: #2563eb; /* Matches GimmeSummary Blue theme */
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .last-updated {
+            color: #6b7280;
+            font-size: 14px;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        h2 {
+            color: #1f2937;
+            font-size: 20px;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+        p, li {
+            color: #4b5563;
+            font-size: 15px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .contact {
+            background: #f3f4f6;
+            padding: 16px;
+            border-radius: 8px;
+            margin-top: 24px;
+        }
+        .disclaimer {
+            font-size: 13px;
+            color: #6b7280;
+            border-top: 1px solid #e5e7eb;
+            margin-top: 40px;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for GimmeSummary - PDF Summarizer</h1>
+        <div class="last-updated">Last Updated: August 30, 2026</div>
+
+        <p>At GimmeSummary, we take your privacy seriously. This privacy policy describes what data we collect, how we handle it, and your rights regarding your data.</p>
+
+        <h2>1. Information Processing & local Storage</h2>
+        <p>GimmeSummary is designed to process and summarize PDF documents and text. <strong>We do not save, collect, or monitor your personal user files, documents, or private metadata on our servers.</strong></p>
+        <ul>
+            <li><strong>Local Extraction</strong>: All text extraction from uploaded PDF documents is processed locally inside your browser context on your machine.</li>
+            <li><strong>Local Storage</strong>: Generated summaries, document names, and chat conversation histories are saved entirely inside your browser's local storage (<code>chrome.storage.local</code>).</li>
+            <li>No document content or chat logs are ever uploaded, sold, or shared with third parties for commercial use.</li>
+        </ul>
+
+        <h2>2. Data Transmission to AI Services</h2>
+        <p>To generate summaries and run interactive chat sessions, the extension securely transmits the document text and your prompts to our AI processing partner, OpenAI.</p>
+        <ul>
+            <li>Requests are routed securely via HTTPS through a private Cloudflare Worker proxy (<code>plain-silence-5065</code>) to the OpenAI API endpoints.</li>
+            <li>The transmission contains only the document text and the chat queries required to generate the output.</li>
+            <li>As per OpenAI’s API policies, data sent to the API is not used to train or improve their AI models.</li>
+        </ul>
+
+        <h2>3. Permissions Used</h2>
+        <ul>
+            <li><strong>storage</strong>: Used to save your summarized documents list, settings, and chat history locally on your computer.</li>
+            <li><strong>activeTab</strong>: Used to retrieve the URL of the active PDF page you are viewing to open it directly in the summarizer.</li>
+            <li><strong>contextMenus</strong>: Used to add right-click context menu options to summarize links or pages directly.</li>
+            <li><strong>Host Permissions</strong>: Used to fetch and parse online PDF files directly from web URLs inside your browser.</li>
+        </ul>
+
+        <h2>4. Data Retention & Deletion</h2>
+        <p>Since all your summaries and chats are stored locally on your device in your browser's local storage, we do not retain any of your files on our servers. Your data is retained on your device until:</p>
+        <ul>
+            <li>You delete individual summaries or clear history inside the extension interface.</li>
+            <li>You clear your browser cache/extension local storage.</li>
+            <li>You uninstall the extension.</li>
+        </ul>
+
+        <h2>5. Contact Support</h2>
+        <div class="contact">
+            <p style="margin:0;">If you have any questions, contact us at: <strong>andruge70@gmail.com</strong></p>
+        </div>
+
+        <div class="disclaimer">
+            <p><strong>Disclaimer:</strong> This extension is an independent product developed by MapFlow Studio and is not affiliated with, sponsored by, or endorsed by Google LLC or OpenAI.</p>
+        </div>
+    </div>
+</body>
+</html>
