@@ -1,4 +1,4 @@
-# GimmeSummary - PDF Summarizer
+# GimmeSummary - Secure PDF Summarizer
 
 GimmeSummary is a private, secure AI document assistant for Chrome and Firefox. It processes documents locally in the browser context and handles AI completions through a secure Cloudflare Worker proxy, keeping your API configurations hidden and safe.
 
